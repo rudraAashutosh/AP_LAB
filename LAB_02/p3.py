@@ -1,4 +1,3 @@
-#given a and b find the number of possible values that x can take , so that the equation a mod x =b
 def check(a,b):
     count=0
     p = []

@@ -1,6 +1,20 @@
 def fun(x,k,y):
+    return (power(x,k))%y
+
+def power(x, y):
+    if y == 0:
+        return 1
+    if y == 1:
+        return x
+
+    hp = power(x, y // 2)
     
-    return (x**k)%y
+    
+    if y % 2 == 0:
+        return hp * hp
+    else:
+        return hp * hp * x
+
 
 def main():
     x=int(input("ENter value of x"))
