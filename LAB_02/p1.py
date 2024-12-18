@@ -4,7 +4,19 @@ def get_first_last_digits(number, m):
         return num_str, num_str
     else:
         return num_str[:m], num_str[-m:]
+def power(x, y):
+    if y == 0:
+        return 1
+    if y == 1:
+        return x
 
+    hp = power(x, y // 2)
+    
+    
+    if y % 2 == 0:
+        return hp * hp
+    else:
+        return hp * hp * x
 def main():
     try:
         m = int(input("Enter the value of m: "))
@@ -15,7 +27,7 @@ def main():
             print("The value of m should be greater than 0.")
             return
 
-        result = n ** k
+        result = power(n,k)
         first_m, last_m = get_first_last_digits(result, m)
 
         print(f"First {m} digits: {first_m}")
