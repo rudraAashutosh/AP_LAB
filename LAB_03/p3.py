@@ -1,0 +1,2 @@
+# Q-3. Given a binary tree and an integer k, the task is to count the number of paths in the tree such that the 
+# sum of the nodes in each path equals k. A path can start from any node and end at any node and must be downward only
