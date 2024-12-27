@@ -72,6 +72,9 @@ def remove():
 def add(c):
     if(isfull() and c not in cache):
         remove()
+        for key in cache:
+            cache[key]=1
+            
     cache[c] = cache.get(c,0)+1
 
 def getkey(c):
