@@ -99,3 +99,31 @@ while True:
         print_cache()
     else:
         exit()
+        
+        
+        
+# array[]={a.b.c.d}
+#add(x)x=h
+#  {
+    # if(islistFull() and x not in list)
+    # {
+#     the element at 0 the index wo remove and list 
+  #           for i in array
+#               arr[index]=i++
+#                 array[size]=x 
+#    } 
+#  elseif(islistfull())
+#    { 
+#        for list
+#             {
+#               x-> index 
+#             }
+#           index=1; 
+#           temp=arr[index]
+#           for i in array
+#               arr[index]=i++  temp=c {d,a,c,h}
+#           array[size]=temp
+# }
+# }
+#remove()
+#  
