@@ -17,3 +17,7 @@ def findsum(node,curr_sum):
         findsum(node.left,node.val)
         findsum(node.right,curr_sum+node.val)
         findsum(node.right,node.val)
+
+def main():
+  
+  
