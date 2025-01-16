@@ -1,5 +1,6 @@
 dia = 0
 def calc_diameter(root):
+    global dia
     if(root==None):
         return 0
     left = calc_diameter(root.left)

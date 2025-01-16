@@ -17,3 +17,5 @@ A height balanced binary tree is a binary tree in which the height of the left s
 5.K'th Largest element in BST using constant extra space
 
 Implementation of K-Means Clustering in Pythons
+
+Check wehther a directed graph is acyclic or not
