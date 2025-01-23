@@ -39,7 +39,7 @@ def inorder(root, k, result):
 
 
 def k_largest_element(root, k):
-    result = [0]
+    result = [0] 
     return inorder(root, k, result)
 
 
