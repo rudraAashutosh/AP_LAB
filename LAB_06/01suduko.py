@@ -44,8 +44,18 @@ sudoku_board = [
     [0, 0, 0, 0, 8, 0, 0, 7, 9]
 ]
 
+def print_board(board):
+    for row in board:
+        print(" ,".join(str(num) if num != 0 else ' ' for num in row))
+
+print("Sudoku board before solving:")
+print_board(sudoku_board)
+    
+print("\n")
 if solve_sudoku(sudoku_board):
-    for row in sudoku_board:
-        print(row)
+    # for row in sudoku_board:
+    #     print(row)
+    print_board(sudoku_board)
+    
 else:
     print("No solution exists")
