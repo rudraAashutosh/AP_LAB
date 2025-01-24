@@ -31,7 +31,9 @@ class Graph:
             print(c, end=' ')
         return True
 
-# Example usage:
+
+
+
 g = Graph(4)
 g.graph = [[0, 1, 1, 1],
            [1, 0, 1, 0],
