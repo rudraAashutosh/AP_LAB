@@ -1,5 +1,5 @@
 1. Solve 9x9 suduko
 2. Given an undirected graph and a number n the task is to colour the given graph with such that no two adjacent vertices of the graph are coloured with same colour
 3. Given an integer array and an integer k the task is to check if it is possible to divide 
-the given array into k non empty subsets of equal sub such that every array element is a part 
-of a single subset.
+   the given array into k non empty subsets of equal sub such that every array element is a part 
+   of a single subset.
