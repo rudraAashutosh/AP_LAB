@@ -11,9 +11,9 @@
 4.  Balanced Binary Tree or Not
 
 
-....A height balanced binary tree is a binary tree in which the height of the left subtree and right subtree of any node does not differ by more than I and both the left and right subtree are also height balanced.
+....A height balanced binary tree is a binary tree in which the height of the left subtree and right subtree 
+    of any node does not differ by more than I and both the left and right subtree are also height balanced.
 
 
 5.  K'th Largest element in BST using constant extra space
 
-    Implementation of K-Means Clustering in Pythons
