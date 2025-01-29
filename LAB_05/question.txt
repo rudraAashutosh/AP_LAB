@@ -1,19 +1,19 @@
-11
+1   Given a binary tree, the task is to convert the binary tree to its Mirror tree. Mirror Of a Binary Tree T is another 
+    Binary Tree M(T) with left and right children of all non-leaf nodes interchanged.
 
-1 Given a binary tree, the task is to convert the binary tree to its Mirror tree. Mirror Of a Binary Tree T is another Binary Tree M(T) with left and right children of all non-leaf nodes interchanged.
+2.  Diameter of a Binary Tree in O(n). The diameter of a tree is the number of nodes on the longest path 
+    between two leaves in the tree.
 
-2. Diameter of a Binary Tree in O(n). The diameter of a tree is the number of nodes on the longest path between two leaves in the tree.
+3.  Given a binary tree, the task is to check for every node, its value is equal to the sum of values of its 
+    immediate left and right child. For NULL values, consider the value to be 0. Also, leaves are considered to follow 
+    the property.
 
-3. Given a binary tree, the task is to check for every node, its value is equal to the sum of values of its immediate left and right child. For NULL values, consider the value to be 0. Also, leaves are considered to follow the property.
-
-4. Balanced Binary Tree or Not
+4.  Balanced Binary Tree or Not
 
 
 ....A height balanced binary tree is a binary tree in which the height of the left subtree and right subtree of any node does not differ by more than I and both the left and right subtree are also height balanced.
 
 
-5.K'th Largest element in BST using constant extra space
+5.  K'th Largest element in BST using constant extra space
 
-Implementation of K-Means Clustering in Pythons
-
-6.Check wehther a directed graph is acyclic or not
+    Implementation of K-Means Clustering in Pythons
