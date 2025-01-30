@@ -1,42 +1,36 @@
-#include <iostream>
-#include <vector>
-#include <limits.h>
+import sys
 
-using namespace std;
+N = 4  # Adjust for larger N
 
-#define N 4  // Adjust for larger N
+def find_min_cost(cost, workers, jobs, visited, worker):
+    if worker >= N:
+        return 0  # Base case: all workers assigned
 
-int findMinCost(vector<vector<int>> &cost, vector<int> &workers, vector<int> &jobs, vector<bool> &visited, int worker) {
-    if (worker >= N) return 0; // Base case: all workers assigned
+    min_cost = sys.maxsize
+    for job in range(N):
+        if not visited[job]:
+            visited[job] = True
+            cost_with_current = cost[worker][job] + find_min_cost(cost, workers, jobs, visited, worker + 1)
+            min_cost = min(min_cost, cost_with_current)
+            visited[job] = False  # Backtrack
+    return min_cost
 
-    int minCost = INT_MAX;
-    for (int job = 0; job < N; job++) {
-        if (!visited[job]) {
-            visited[job] = true;
-            int costWithCurrent = cost[worker][job] + findMinCost(cost, workers, jobs, visited, worker + 1);
-            minCost = min(minCost, costWithCurrent);
-            visited[job] = false; // Backtrack
-        }
-    }
-    return minCost;
-}
+def min_assignment_cost(cost):
+    workers = [-1] * N
+    jobs = [-1] * N
+    visited = [False] * N
 
-int minAssignmentCost(vector<vector<int>> &cost) {
-    vector<int> workers(N, -1);
-    vector<int> jobs(N, -1);
-    vector<bool> visited(N, false);
+    return find_min_cost(cost, workers, jobs, visited, 0)
 
-    return findMinCost(cost, workers, jobs, visited, 0);
-}
+def main():
+    cost = [
+        [9, 2, 7, 8],
+        [6, 4, 3, 7],
+        [5, 8, 1, 8],
+        [7, 6, 9, 4]
+    ]
 
-int main() {
-    vector<vector<int>> cost = {
-        {9, 2, 7, 8},
-        {6, 4, 3, 7},
-        {5, 8, 1, 8},
-        {7, 6, 9, 4}
-    };
+    print("Minimum Assignment Cost:", min_assignment_cost(cost))
 
-    cout << "Minimum Assignment Cost: " << minAssignmentCost(cost) << endl;
-    return 0;
-}
+if __name__ == "__main__":
+    main()
